@@ -1,13 +1,8 @@
 import React from "react";
-import "./App.css";
-import Menu from "./components/menu/Menu";
+import Routes from "./routes";
 
 function App() {
-  return (
-    <div className="App">
-      <Menu />
-    </div>
-  );
+  return <Routes />;
 }
 
 export default App;
