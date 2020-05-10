@@ -1,13 +1,14 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./menu.css";
 
 export default class Menu extends Component {
   render() {
     return (
       <nav class="navbar navbar-expand-lg navbar-dark teste">
-        <a class="navbar-brand" href="#">
+        <Link class="navbar-brand" href="/">
           Girls'N Code
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -22,14 +23,14 @@ export default class Menu extends Component {
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="/sobre">
                 Sobre
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
